@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+  
+.animated-background, body {
+    background-image: linear-gradient(
+      to right, #b35eb2,
+      #d66a6a, #fcb045
+    );
+    animation: animated-background 10s infinite ease-in-out;
+  }
+  .text-content {
+    color: aliceblue;
+    text-align: justify;
+    padding: 0% 10%;;
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+  }
+  .header{
+    color: antiquewhite;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: x-large;
+  }
+  .text-content:after{
+    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum";
+  }
+  @keyframes animated-background{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
